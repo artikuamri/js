@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #box{
+        height: 100px;
+        width: 100px;
+    }
+    .box1{
+        border: 2px solid black;
+        width: 200px;
+        margin: 50px;
+        padding: 20px;
+    }
+</style>
+<body>
+    <div class="box1">
+        <h1>custom div</h1>
+    <input type="height" placeholder="enter a height" id="h"><br><br>
+    <input type="width" placeholder="enter a width" id="w"><br><br>
+    <input type="text" placeholder="enter a text" id="t"><br><br>
+    <input type="color" placeholder="enter a color" id="c"><br><br>
+    <button onclick="fun1()"> click</button>
+    <div id="box">
+    </div>
+</div>
+    <script>
+        function fun1(){
+           document.getElementById("box").style.height = document.getElementById("h").value 
+           document.getElementById("box").style.width = document.getElementById("w").value 
+           document.getElementById("box").style.text = document.getElementById("t").innerHTML
+           document.getElementById("box").style.backgroundColor = document.getElementById("c").value 
+        }
+    </script>
+</body>
+</html>
